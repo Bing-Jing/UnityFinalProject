@@ -34,6 +34,8 @@ public class PlayerCamera : MonoBehaviour {
 			x += 360;
 		}
 
+
+
 		distance -= Input.GetAxis ("Mouse ScrollWheel") * scrollSpeed * Time.deltaTime;
 		distance = Mathf.Clamp (distance, minDistance, maxDistance);
 
