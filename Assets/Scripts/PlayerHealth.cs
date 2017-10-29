@@ -45,6 +45,7 @@ public class PlayerHealth : MonoBehaviour {
 		healthSlider.value = currentHealth;
 	}
 	public void FallDeath(){
+		applyDamage(startingHealth);
 		StartCoroutine (KillPlayer ());
 	}
 	IEnumerator KillPlayer(){
