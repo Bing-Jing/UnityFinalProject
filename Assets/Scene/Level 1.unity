@@ -446,8 +446,8 @@ MonoBehaviour:
   obj:
   - {fileID: 1610168048625814, guid: 34359b0c0b262401fa35bc4bcb366c29, type: 2}
   - {fileID: 1570002883006462, guid: 68bb23c5e57444e4a92eaf5a975aaf7a, type: 2}
-  spawnMin: 15
-  spawnMax: 20
+  spawnMin: 18
+  spawnMax: 24
 --- !u!4 &628674364 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4198043814721128, guid: ce1c47babe5679143b24221e8878c4dd,
@@ -495,7 +495,7 @@ Prefab:
     - target: {fileID: 114816396786443810, guid: ee7cd66d272824f2b860099d82e15397,
         type: 2}
       propertyPath: fallSpeed
-      value: 0.03
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7cd66d272824f2b860099d82e15397, type: 2}
@@ -602,8 +602,8 @@ MonoBehaviour:
   obj:
   - {fileID: 1610168048625814, guid: 34359b0c0b262401fa35bc4bcb366c29, type: 2}
   - {fileID: 1570002883006462, guid: 68bb23c5e57444e4a92eaf5a975aaf7a, type: 2}
-  spawnMin: 15
-  spawnMax: 20
+  spawnMin: 18
+  spawnMax: 24
 --- !u!1001 &1474869808
 Prefab:
   m_ObjectHideFlags: 0
@@ -705,8 +705,8 @@ MonoBehaviour:
   obj:
   - {fileID: 1610168048625814, guid: 34359b0c0b262401fa35bc4bcb366c29, type: 2}
   - {fileID: 1570002883006462, guid: 68bb23c5e57444e4a92eaf5a975aaf7a, type: 2}
-  spawnMin: 15
-  spawnMax: 20
+  spawnMin: 18
+  spawnMax: 24
 --- !u!1 &1713874277
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +810,31 @@ Prefab:
     - target: {fileID: 4432071359011392, guid: 34359b0c0b262401fa35bc4bcb366c29, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 23877450592824352, guid: 34359b0c0b262401fa35bc4bcb366c29,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 573fce6692110467dac7901073bdee97, type: 2}
+    - target: {fileID: 23877450592824352, guid: 34359b0c0b262401fa35bc4bcb366c29,
+        type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23877450592824352, guid: 34359b0c0b262401fa35bc4bcb366c29,
+        type: 2}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23877450592824352, guid: 34359b0c0b262401fa35bc4bcb366c29,
+        type: 2}
+      propertyPath: m_ReflectionProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23877450592824352, guid: 34359b0c0b262401fa35bc4bcb366c29,
+        type: 2}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34359b0c0b262401fa35bc4bcb366c29, type: 2}
