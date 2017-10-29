@@ -20,11 +20,21 @@ public class PlayerCamera : MonoBehaviour {
 		x += Input.GetAxis ("Mouse X") * xSpeed * Time.deltaTime;
 		//y += Input.GetAxis ("Mouse Y") * ySpeed * Time.deltaTime;
 
+		if (Input.mousePosition.x >= Screen.width * 0.95) {
+			x += 2 * xSpeed * Time.deltaTime;
+			print ("border");
+		} else if (Input.mousePosition.x <= Screen.width * 0.05) {
+			x -= 2 * xSpeed * Time.deltaTime;
+			print ("border");
+		}
+		
 		if (x > 360) {
 			x -= 360;
 		} else if (x < 0) {
 			x += 360;
 		}
+
+
 
 		distance -= Input.GetAxis ("Mouse ScrollWheel") * scrollSpeed * Time.deltaTime;
 		distance = Mathf.Clamp (distance, minDistance, maxDistance);
