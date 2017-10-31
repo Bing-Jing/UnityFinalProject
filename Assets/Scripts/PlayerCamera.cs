@@ -39,7 +39,7 @@ public class PlayerCamera : MonoBehaviour {
 		distance -= Input.GetAxis ("Mouse ScrollWheel") * scrollSpeed * Time.deltaTime;
 		distance = Mathf.Clamp (distance, minDistance, maxDistance);
 
-		rotationEuler = Quaternion.Euler (y+40, x, 0);
+		rotationEuler = Quaternion.Euler (y+20, x, 0);
 		cameraPosition = rotationEuler * new Vector3 (0.4f, 1.5f, -distance) + player.position;
 		transform.rotation = rotationEuler;
 		transform.position = cameraPosition;
